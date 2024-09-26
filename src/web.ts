@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { NativeActionSheetPlugin } from './definitions';
+import type { NativeActionSheetPlugin, NativeActionSheetOptions, NativeActionSheetResponse } from './definitions';
 
 export class NativeActionSheetWeb extends WebPlugin implements NativeActionSheetPlugin {
-  async open(_: { items: [], theme: number, cancelable: boolean, cancelableLabel: string }): Promise<{ canceled: boolean, selectedItem: number }>{
+  async open(_: NativeActionSheetOptions): Promise<NativeActionSheetResponse>{
     console.error('NativeActionSheet Plugin does not work in browser.')
-    return { canceled: true, selectedItem: -1};
+    return { cancelled : false, selectedItem: -1}
   }
 }
