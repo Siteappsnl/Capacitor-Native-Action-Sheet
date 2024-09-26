@@ -28,9 +28,11 @@ npx cap sync
 open(options: { items: NativeActionSheetItem[]; theme: number; cancelable: boolean; cancelableLabel: string; }) => Promise<{ canceled: boolean; selectedItem: number; }>
 ```
 
-| Param         | Type                                                                                                          |
-| ------------- | ------------------------------------------------------------------------------------------------------------- |
-| **`options`** | <code>{ items: NativeActionSheetItem[]; theme: number; cancelable: boolean; cancelableLabel: string; }</code> |
+Open new action sheet
+
+| Param         | Type                                                                                                          | Description                 |
+| ------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| **`options`** | <code>{ items: NativeActionSheetItem[]; theme: number; cancelable: boolean; cancelableLabel: string; }</code> | Options for the actionsheet |
 
 **Returns:** <code>Promise&lt;{ canceled: boolean; selectedItem: number; }&gt;</code>
 
