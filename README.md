@@ -13,24 +13,24 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`open(...)`](#open)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### open(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+open(options: { items: []; theme: number; cancelable: boolean; cancelableLabel: string; }) => Promise<{ canceled: boolean; selectedItem: number; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+| Param         | Type                                                                                     |
+| ------------- | ---------------------------------------------------------------------------------------- |
+| **`options`** | <code>{ items: []; theme: number; cancelable: boolean; cancelableLabel: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ canceled: boolean; selectedItem: number; }&gt;</code>
 
 --------------------
 

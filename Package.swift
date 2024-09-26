@@ -19,10 +19,6 @@ let package = Package(
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm")
             ],
-            path: "ios/Sources/NativeActionSheetPlugin"),
-        .testTarget(
-            name: "NativeActionSheetPluginTests",
-            dependencies: ["NativeActionSheetPlugin"],
-            path: "ios/Tests/NativeActionSheetPluginTests")
+            path: "ios/Sources/NativeActionSheetPlugin")
     ]
 )
