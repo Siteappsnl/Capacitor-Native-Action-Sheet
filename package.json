@@ -1,5 +1,5 @@
 {
-  "name": "@capacitor/native-action-sheet",
+  "name": "@siteapps/capacitor-native-action-sheet",
   "version": "7.0.1",
   "description": "Capacitor plugin for the native action sheet dialog",
   "main": "dist/plugin.cjs.js",
