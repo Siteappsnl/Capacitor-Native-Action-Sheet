@@ -1,6 +1,6 @@
 {
   "name": "@siteapps/capacitor-native-action-sheet",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "Capacitor plugin for the native action sheet dialog",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

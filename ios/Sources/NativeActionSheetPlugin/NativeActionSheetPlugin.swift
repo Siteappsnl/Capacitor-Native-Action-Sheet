@@ -46,6 +46,13 @@ public class NativeActionSheetPlugin: CAPPlugin, CAPBridgedPlugin {
                     call.resolve(["cancelled" : true])
                 }))
             }
+
+            // Fix Ipad Popover position
+            if let popover = alertController.popoverPresentationController {
+                popover.sourceView = self?.bridge?.viewController?.view
+                popover.sourceRect = CGRect(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY, width: 0, height: 0)
+                popover.permittedArrowDirections = []
+            }
             
             // Open the alert controller
             self!.bridge!.viewController!.present(alertController, animated: true, completion: nil)
