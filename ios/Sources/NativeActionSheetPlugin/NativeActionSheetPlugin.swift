@@ -34,10 +34,13 @@ public class NativeActionSheetPlugin: CAPPlugin, CAPBridgedPlugin {
                 let item: JSObject = items[i] as! JSObject
                 let label = (item["label"] ?? "") as! String
                 let destructive = (item["style"] ?? "") as! String == "DESTRUCTIVE"
+                let disabled = (item["disabled"] ?? false) as! Bool
                 // Add the action to the controller
                 alertController.addAction(UIAlertAction(title: label, style: destructive ? .destructive : .default) { UIAlertAction in
                     call.resolve(["cancelled" : false, "selectedItem": i])
                 })
+                // Enable or disable
+                alertController.actions[i].isEnabled = !disabled
             }
             
             // Add the cancel action
