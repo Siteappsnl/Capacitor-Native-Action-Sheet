@@ -51,8 +51,6 @@ public class NativeActionSheetPlugin extends Plugin {
                 EnabledStates.add(!item.optBoolean("disabled", false));
             }
 
-            EnabledStates.set(1, false);
-
             // Get helper variables for the color
             TypedValue TypedValue = new TypedValue();
             Context Context = getContext(); // or this.getActivity()

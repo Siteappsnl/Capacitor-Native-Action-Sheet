@@ -26,6 +26,8 @@ export interface NativeActionSheetItem{
   label : string;
   /** Style for the item (iOS only) */
   style: NativeActionSheetStyle
+  /** Is the item disabled */
+  disabled : boolean
 }
 
 export interface NativeActionSheetPlugin {

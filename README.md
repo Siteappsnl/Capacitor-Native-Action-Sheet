@@ -62,10 +62,11 @@ Open new action sheet
 
 #### NativeActionSheetItem
 
-| Prop        | Type                                                                      | Description                   |
-| ----------- | ------------------------------------------------------------------------- | ----------------------------- |
-| **`label`** | <code>string</code>                                                       | Label for item                |
-| **`style`** | <code><a href="#nativeactionsheetstyle">NativeActionSheetStyle</a></code> | Style for the item (iOS only) |
+| Prop           | Type                                                                      | Description                   |
+| -------------- | ------------------------------------------------------------------------- | ----------------------------- |
+| **`label`**    | <code>string</code>                                                       | Label for item                |
+| **`style`**    | <code><a href="#nativeactionsheetstyle">NativeActionSheetStyle</a></code> | Style for the item (iOS only) |
+| **`disabled`** | <code>boolean</code>                                                      | Is the item disabled          |
 
 
 ### Enums
